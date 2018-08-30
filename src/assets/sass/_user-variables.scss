@@ -38,16 +38,16 @@ $grays: map-merge(
 );
 
 
-$blue:    #2196f3;
-$indigo:  #3f51b5;
-$purple:  #9c27b0;
-$pink:    #e91e63;
-$red:     #f44336;
-$orange:  #ff9800;
-$yellow:  #ffc107;
-$green:   #4caf50;
-$teal:    #009688;
-$cyan:    #00bcd4;
+$blue:    #2962ff;
+$indigo:  #304ffe;
+$purple:  #aa00ff;
+$pink:    #c51162;
+$red:     #d50000;
+$orange:  #ff6d00;
+$yellow:  #ffd600;
+$green:   #00c853;
+$teal:    #00bfa5;
+$cyan:    #00b8d4;
 
 $colors: ();
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -136,7 +136,9 @@ $spacers: map-merge(
       2: ($spacer * .5),
       3: $spacer,
       4: ($spacer * 1.5),
-      5: ($spacer * 3)
+      5: ($spacer * 3),
+      6: ($spacer * 4.5),
+      7: ($spacer * 6)
     ),
     $spacers
 );
@@ -249,7 +251,7 @@ $transition-collapse:         height .35s ease;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-sans-serif:       'Inter UI', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
@@ -260,7 +262,7 @@ $font-size-sm:                ($font-size-base * .875);
 
 $font-weight-light:           300;
 $font-weight-normal:          400;
-$font-weight-bold:            700;
+$font-weight-bold:            500;
 
 $font-weight-base:            $font-weight-normal;
 $line-height-base:            1.5;
@@ -274,8 +276,8 @@ $h6-font-size:                $font-size-base;
 
 $headings-margin-bottom:      ($spacer / 2);
 $headings-font-family:        inherit;
-$headings-font-weight:        500;
-$headings-line-height:        1.2;
+$headings-font-weight:        $font-weight-bold;
+$headings-line-height:        1.5;
 $headings-color:              inherit;
 
 $display1-size:               6rem;
