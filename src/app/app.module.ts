@@ -16,7 +16,9 @@ import {AppRoutingModule} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule, ToastrService} from 'ngx-toastr';
-import {TokenInterceptor} from './token.interceptor';
+import {TokenInterceptor} from './_helpers/token.interceptor';
+
+import {AuthService} from './_services/auth.service';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import {TokenInterceptor} from './token.interceptor';
     ToastrModule.forRoot(),
   ],
   providers: [
+    AuthService,
     ToastrService,
     FeatherIconsPipe,
     {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true},

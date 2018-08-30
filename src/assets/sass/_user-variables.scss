@@ -161,7 +161,7 @@ $sizes: map-merge(
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white;
+$body-bg:                   $gray-100;
 $body-color:                $gray-900;
 
 // Links
@@ -350,20 +350,20 @@ $table-caption-color:         $text-muted;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem;
-$input-btn-padding-x:         .75rem;
+$input-btn-padding-y:         .5rem;
+$input-btn-padding-x:         1rem;
 $input-btn-line-height:       $line-height-base;
 
 $input-btn-focus-width:       .2rem;
 $input-btn-focus-color:       rgba($component-active-bg, .25);
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
 
-$input-btn-padding-y-sm:      .25rem;
-$input-btn-padding-x-sm:      .5rem;
+$input-btn-padding-y-sm:      .375rem;
+$input-btn-padding-x-sm:      .75rem;
 $input-btn-line-height-sm:    $line-height-sm;
 
-$input-btn-padding-y-lg:      .5rem;
-$input-btn-padding-x-lg:      1rem;
+$input-btn-padding-y-lg:      .75rem;
+$input-btn-padding-x-lg:      1.25rem;
 $input-btn-line-height-lg:    $line-height-lg;
 
 $input-btn-border-width:      $border-width;
@@ -465,7 +465,7 @@ $form-check-input-margin-x:             .25rem;
 $form-check-inline-margin-x:            .75rem;
 $form-check-inline-input-margin-x:      .3125rem;
 
-$form-group-margin-bottom:              1rem;
+$form-group-margin-bottom:              1.5rem;
 
 $input-group-addon-color:               $input-color;
 $input-group-addon-bg:                  $gray-200;
