@@ -11,14 +11,17 @@ import {AddComponent} from './videos/add/add.component';
 import {WatchComponent} from './videos/watch/watch.component';
 import {PageNotFoundComponent} from './not-found.component';
 
-import {FeatherIconsPipe} from './pipes/feather-icons.pipe';
+import {FeatherIconsPipe} from './_pipes/feather-icons.pipe';
+
 import {AppRoutingModule} from './app-routing.module';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule, ToastrService} from 'ngx-toastr';
 import {TokenInterceptor} from './_helpers/token.interceptor';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {AuthService} from './_services/auth.service';
+import {VideoService} from './_services/video.service';
+import {NgMathPipesModule} from 'angular-pipes';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import {AuthService} from './_services/auth.service';
     WatchComponent,
     AddComponent,
     PageNotFoundComponent,
+    FeatherIconsPipe,
   ],
   imports: [
     BrowserModule,
@@ -37,12 +41,14 @@ import {AuthService} from './_services/auth.service';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NgMathPipesModule,
     ToastrModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [
     AuthService,
+    VideoService,
     ToastrService,
-    FeatherIconsPipe,
     {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true},
   ],
   bootstrap: [AppComponent]

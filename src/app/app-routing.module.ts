@@ -14,7 +14,7 @@ const routes: Routes = [
     path: 'videos', component: VideosComponent,
     children: [
       {path: '', component: ListComponent},
-      {path: 'watch', component: WatchComponent},
+      {path: 'watch/:id', component: WatchComponent},
       {path: 'add', component: AddComponent},
     ]
   },

@@ -267,11 +267,11 @@ $font-weight-bold:            500;
 $font-weight-base:            $font-weight-normal;
 $line-height-base:            1.5;
 
-$h1-font-size:                $font-size-base * 2.5;
-$h2-font-size:                $font-size-base * 2;
-$h3-font-size:                $font-size-base * 1.75;
-$h4-font-size:                $font-size-base * 1.5;
-$h5-font-size:                $font-size-base * 1.25;
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.75;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-base * 1.25;
+$h5-font-size:                $font-size-base * 1.125;
 $h6-font-size:                $font-size-base;
 
 $headings-margin-bottom:      ($spacer / 2);
@@ -326,12 +326,12 @@ $table-cell-padding:          .75rem;
 $table-cell-padding-sm:       .3rem;
 
 $table-bg:                    transparent;
-$table-accent-bg:             rgba($black, .05);
-$table-hover-bg:              rgba($black, .075);
+$table-accent-bg:             rgba($primary, .05);
+$table-hover-bg:              rgba($primary, .075);
 $table-active-bg:             $table-hover-bg;
 
 $table-border-width:          $border-width;
-$table-border-color:          $gray-300;
+$table-border-color:          $gray-200;
 
 $table-head-bg:               $gray-200;
 $table-head-color:            $gray-700;
@@ -666,12 +666,12 @@ $navbar-dark-disabled-color:        rgba($white, .25);
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
 $navbar-dark-toggler-border-color:  rgba($white, .1);
 
-$navbar-light-color:                rgba($black, .5);
-$navbar-light-hover-color:          rgba($black, .7);
-$navbar-light-active-color:         rgba($black, .9);
-$navbar-light-disabled-color:       rgba($black, .3);
+$navbar-light-color:                rgba($primary, 1);
+$navbar-light-hover-color:          rgba($primary, .9);
+$navbar-light-active-color:         rgba($primary, .8);
+$navbar-light-disabled-color:       rgba($primary, .7);
 $navbar-light-toggler-icon-bg:      str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
-$navbar-light-toggler-border-color: rgba($black, .1);
+$navbar-light-toggler-border-color: rgba($primary, .6);
 
 // Pagination
 

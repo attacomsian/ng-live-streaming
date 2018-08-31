@@ -24,7 +24,7 @@ export class TokenInterceptor implements HttpInterceptor {
     // check for JWT token expiration
     return next.handle(request).pipe(catchError(err => {
       // route the user to login if token expired
-      if (err instanceof HttpErrorResponse && (err.status === 401 || err.status === 403)) {
+      if (err instanceof HttpErrorResponse && err.status === 401) {
         // remove token first
         localStorage.removeItem('auth_token');
 
