@@ -14,6 +14,7 @@ import {PageNotFoundComponent} from './not-found.component';
 import {FeatherIconsPipe} from './_pipes/feather-icons.pipe';
 
 import {AppRoutingModule} from './app-routing.module';
+import {AuthGuard} from './_guards/auth.guard';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ToastrModule, ToastrService} from 'ngx-toastr';
@@ -46,6 +47,7 @@ import {NgMathPipesModule} from 'angular-pipes';
     NgbModule.forRoot()
   ],
   providers: [
+    AuthGuard,
     AuthService,
     VideoService,
     ToastrService,

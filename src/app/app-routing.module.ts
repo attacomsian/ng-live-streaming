@@ -7,11 +7,12 @@ import {VideosComponent} from './videos/videos.component';
 import {ListComponent} from './videos/list/list.component';
 import {AddComponent} from './videos/add/add.component';
 import {WatchComponent} from './videos/watch/watch.component';
+import {AuthGuard} from './_guards/auth.guard';
 
 const routes: Routes = [
   {path: '', component: AuthComponent},
   {
-    path: 'videos', component: VideosComponent,
+    path: 'videos', component: VideosComponent, canActivate: [AuthGuard],
     children: [
       {path: '', component: ListComponent},
       {path: 'watch/:id', component: WatchComponent},

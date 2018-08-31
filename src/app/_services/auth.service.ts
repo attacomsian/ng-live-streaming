@@ -9,7 +9,7 @@ export class AuthService {
   // store the URL so we can redirect after logging in
   private redirectUrl: string;
   // api URL
-  private API_URL = 'http://localhost:8080/api/v1.0/';
+  private API_URL = 'http://localhost:8080/';
 
   constructor(private http: HttpClient) {
   }
@@ -24,7 +24,7 @@ export class AuthService {
 
   // register
   register(username: string, password: string): Observable<any> {
-    return this.http.post<any>(this.API_URL + 'users/sign-up', {
+    return this.http.post<any>(this.API_URL + 'api/v1.0/users/sign-up', {
       username: username,
       password: password,
     }, {observe: 'response'});
