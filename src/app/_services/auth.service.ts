@@ -9,7 +9,7 @@ export class AuthService {
   // store the URL so we can redirect after logging in
   private redirectUrl: string;
   // api URL
-  private API_URL = 'http://localhost:8080/';
+  private API_URL = 'http://localhost:8080/api/v1.0/';
 
   constructor(private http: HttpClient) {
   }
