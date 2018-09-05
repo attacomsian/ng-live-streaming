@@ -10,6 +10,9 @@ WORKDIR /usr/src/app
 # Copy dependency definitions
 COPY package.json /usr/src/app
 
+#Upgrade npm to latest version
+RUN npm install -g npm
+
 # Install dependecies
 RUN npm install
 
